@@ -1,0 +1,63 @@
+<macromedia-extension
+	type="flash command"
+	version="1.2.0"
+	requires-restart="false"
+	name="CompileTimestamp">
+
+	<!-- List the required/compatible products -->
+	<products>
+		<product name="Flash" version="8" primary="true" />
+	</products>
+
+	<!-- Describe the author -->
+	<author name="James Efstathiou - coursevector.com" />
+
+	<!-- Describe the extension -->
+	<description>
+	<![CDATA[
+	Compile Timestamp<br>
+	<br>
+	Revisions:<br>
+	v1.2.0: Added documentation<br>
+	v1.1.0: Deletes the layer the trace is on<br>
+	v1.0.0: Initial Release<br>
+	<br>
+	Adds a new layer to your fla with a trace of the filename and compile timestamp. Compiles your fla. Then Deletes the layer it created. Used with FlashTracer this allows you to easily check the version of your online swf. Great for testing on servers that cache your files.<br>
+	<br>
+	<br>
+	Usage 1:<br>
+	Select the "CompileTimestamp" from the "Commands" drop down.<br>
+	<br>
+	Usage 2:<br>
+	Map a keyboard shortcut to this command. Mapping "ctrl+enter" would make this command seamless with your current workspace. To map a command, select Edit>Keyboard Shortcuts... Then duplicate a set, as you cannot edit the Adobe Standard set. Once you have you're own set, expand the "Commands" section, select "CompileTimestamp" from the list. Click the "plus" button, and then press "ctrl+enter" while the "Press Key" textfield is selected. It may complain that it is already mapped to another action, this is normal. That other command is the default publish command. CompileTimestamp replaces that. Agree to change to CompileTimestamp and click "OK" to close the menu. Open any FLA and use "ctrl+enter" to test.
+	<br>
+	<br>
+	James Efstathiou
+	http://labs.coursevector.com
+	coursevector@gmail.com
+	<br>
+	Copyright (c) 2008 Course Vector.  All Rights Reserved.
+	]]>
+	</description>
+	
+	<!-- Describe the third-party license agreement -->
+	<license-agreement>
+	<![CDATA[
+	Course Vector provides this extension 'as is' without any warranty of any kind as to
+	the suitability of the extension for the licensees intended purpose. All risk as to the
+	performance of the extension and it's contents are the sole responsibility of you, the licensee.
+	]]>
+	</license-agreement>
+	
+	<!-- Describe where the extension shows in the UI of the product -->
+	<ui-access>
+	<![CDATA[
+	Commands > CompileTimestamp
+	]]>
+	</ui-access>
+	
+	<!-- Describe the files that comprise the extension -->
+	<files>
+		<file source="CompileTimestamp.jsfl" destination="$Flash\commands" />
+	</files>
+</macromedia-extension>
